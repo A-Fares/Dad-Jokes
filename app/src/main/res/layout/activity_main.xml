@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <ImageView
+        android:id="@+id/funny_dad_img"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/funny_dad" />
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/tools"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/funny_dad_img"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="-25dp"
+        app:cardElevation="4dp"
+        app:ignore="NamespaceTypo"
+        card_view:cardCornerRadius="15dp"
+        card_view:contentPadding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_bg"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:id="@+id/setupTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rockb"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+            <!-- android:text="My wife divorced me so i stole her wheelchair."-->
+            <!--  android:text="Guess who came crawling back"-->
+            <TextView
+                android:id="@+id/deliveryTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/rockb"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/welcome_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemonada"
+                android:text="Let's Say Jokes"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/btn_joke"
+        android:fontFamily="@font/lemonada"
+        android:padding="30dp"
+        android:text="Joke"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+</RelativeLayout>

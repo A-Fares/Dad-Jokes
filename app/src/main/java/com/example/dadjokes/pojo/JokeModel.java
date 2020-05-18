@@ -1,0 +1,38 @@
+package com.example.dadjokes.pojo;
+
+public class JokeModel {
+    private String type;
+    private String setup,delivery,joke;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getSetup() {
+        return setup;
+    }
+
+    public void setSetup(String setup) {
+        this.setup = setup;
+    }
+
+    public String getDelivery() {
+        return delivery;
+    }
+
+    public void setDelivery(String delivery) {
+        this.delivery = delivery;
+    }
+
+    public String getJoke() {
+        return joke;
+    }
+
+    public void setJoke(String joke) {
+        this.joke = joke;
+    }
+}
